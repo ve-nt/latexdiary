@@ -28,4 +28,4 @@ for e in sorted_entries:
     output.write("\\textbf{" + e['date'] + "}\\\\\n")
 
     # Writing the input statement
-    output.write("\\input{" + e['path'] + "} \\bigskip\n\n")
+    output.write("\\input{\"" + e['path'] + "\"} \\bigskip\n\n")
