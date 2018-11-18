@@ -3,4 +3,4 @@ main: main.tex entries.py
 	pdflatex main.tex
 
 clean: 
-	rm main.aux main.log main.out main.py* latex.py main.pdf entries.tex main.idx
+	rm main.aux main.log main.out main.pdf entries.tex 

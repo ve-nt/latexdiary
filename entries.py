@@ -20,8 +20,8 @@ for dirname, dirnames, filenames in os.walk('entries'):
                       }
             entries.append(texfile)
 
-sorted_entries = sorted(entries, key=itemgetter('date'))
-for e in sorted_entries:
+entries = sorted(entries, key=itemgetter('date'))
+for e in entries:
     # Writing the title, hspace and date
     output.write("\\textbf{" + e['title'] + "}  ")
     output.write("\\hspace*{\\fill}  ")
